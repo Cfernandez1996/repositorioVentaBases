@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace CrudDefensa.Clases
 {
-    public partial class VistaInventario : Form
+    public partial class Vista2 : Form
     {
         string cadenaConexion = "Host=proyecto-aws.c2htk24uoh9j.us-east-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=bases123456789;Database=Proyecto";
 
-        public VistaInventario()
+        public Vista2()
         {
             InitializeComponent();
-            cargarinventario();
+            cargarvista2();
         }
 
-        private void cargarinventario()
+        private void cargarvista2()
         {
             // Cadena de conexión
 
@@ -33,7 +33,7 @@ namespace CrudDefensa.Clases
                     conexion.Open();
 
                     // Consulta SQL
-                    string consulta = "SELECT * FROM inventario_productos ";
+                    string consulta = "SELECT * FROM compras_por_cliente ";
 
                     // Crear un adaptador de datos
                     NpgsqlDataAdapter dataAdapter = new NpgsqlDataAdapter(consulta, conexion);
@@ -54,13 +54,13 @@ namespace CrudDefensa.Clases
             }
         }
 
-        private void bdinvenatrio()
+        private void bdcomprasclientes()
         {
             using (var connection = new NpgsqlConnection(cadenaConexion))
             {
                 connection.Open();
 
-                using (var cmd = new NpgsqlCommand("SELECT * FROM inventario_productos", connection))
+                using (var cmd = new NpgsqlCommand("SELECT * FROM compras_por_cliente", connection))
                 {
                     NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
                     DataTable dataTable = new DataTable();
@@ -72,7 +72,7 @@ namespace CrudDefensa.Clases
             }
         }
 
-        private void bdinvenatrio_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

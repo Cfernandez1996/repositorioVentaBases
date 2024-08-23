@@ -116,10 +116,36 @@ namespace CrudDefensa.Clases
             producto_Vendedor.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+    
+
+        private void bdinventario_Click(object sender, EventArgs e)
         {
-            inventarioProductos inventarioProductos =new inventarioProductos();
-            inventarioProductos.Show();
+            VistaInventario v1 = new VistaInventario();
+                v1.Show();
+        }
+
+        private void bdcomprasClientes_Click(object sender, EventArgs e)
+        {
+            Vista2 v2 = new Vista2();
+            v2.Show();
+        }
+
+        private void bdHistorial_Click(object sender, EventArgs e)
+        {
+            Vista3 v3 = new Vista3();
+            v3.Show();
+        }
+
+        private void bdTop1_Click(object sender, EventArgs e)
+        {
+            v4 v = new v4();
+            v.Show();
+        }
+
+        private void bdtop2_Click(object sender, EventArgs e)
+        {
+            v5 v = new v5();
+            v.Show();
         }
     }
 }

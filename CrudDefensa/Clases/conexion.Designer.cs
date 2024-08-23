@@ -45,6 +45,10 @@
             this.btnCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bdinventario = new System.Windows.Forms.Button();
+            this.bdcomprasClientes = new System.Windows.Forms.Button();
+            this.bdHistorial = new System.Windows.Forms.Button();
+            this.bdTop1 = new System.Windows.Forms.Button();
+            this.bdtop2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +65,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bdtop2);
+            this.groupBox1.Controls.Add(this.bdTop1);
+            this.groupBox1.Controls.Add(this.bdHistorial);
+            this.groupBox1.Controls.Add(this.bdcomprasClientes);
             this.groupBox1.Controls.Add(this.bdinventario);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button4);
@@ -81,7 +89,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(751, 244);
+            this.groupBox1.Size = new System.Drawing.Size(751, 345);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ";
@@ -249,12 +257,53 @@
             this.bdinventario.TabIndex = 16;
             this.bdinventario.Text = "bdinventario";
             this.bdinventario.UseVisualStyleBackColor = true;
+            this.bdinventario.Click += new System.EventHandler(this.bdinventario_Click);
+            // 
+            // bdcomprasClientes
+            // 
+            this.bdcomprasClientes.Location = new System.Drawing.Point(31, 221);
+            this.bdcomprasClientes.Name = "bdcomprasClientes";
+            this.bdcomprasClientes.Size = new System.Drawing.Size(100, 23);
+            this.bdcomprasClientes.TabIndex = 17;
+            this.bdcomprasClientes.Text = "bdcomprasClientes";
+            this.bdcomprasClientes.UseVisualStyleBackColor = true;
+            this.bdcomprasClientes.Click += new System.EventHandler(this.bdcomprasClientes_Click);
+            // 
+            // bdHistorial
+            // 
+            this.bdHistorial.Location = new System.Drawing.Point(171, 221);
+            this.bdHistorial.Name = "bdHistorial";
+            this.bdHistorial.Size = new System.Drawing.Size(100, 23);
+            this.bdHistorial.TabIndex = 18;
+            this.bdHistorial.Text = "bdHistorial";
+            this.bdHistorial.UseVisualStyleBackColor = true;
+            this.bdHistorial.Click += new System.EventHandler(this.bdHistorial_Click);
+            // 
+            // bdTop1
+            // 
+            this.bdTop1.Location = new System.Drawing.Point(307, 221);
+            this.bdTop1.Name = "bdTop1";
+            this.bdTop1.Size = new System.Drawing.Size(100, 23);
+            this.bdTop1.TabIndex = 19;
+            this.bdTop1.Text = "bdTop1";
+            this.bdTop1.UseVisualStyleBackColor = true;
+            this.bdTop1.Click += new System.EventHandler(this.bdTop1_Click);
+            // 
+            // bdtop2
+            // 
+            this.bdtop2.Location = new System.Drawing.Point(440, 220);
+            this.bdtop2.Name = "bdtop2";
+            this.bdtop2.Size = new System.Drawing.Size(147, 23);
+            this.bdtop2.TabIndex = 20;
+            this.bdtop2.Text = "bdtop2";
+            this.bdtop2.UseVisualStyleBackColor = true;
+            this.bdtop2.Click += new System.EventHandler(this.bdtop2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 325);
+            this.ClientSize = new System.Drawing.Size(1040, 440);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
@@ -284,5 +333,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button bdinventario;
+        private System.Windows.Forms.Button bdcomprasClientes;
+        private System.Windows.Forms.Button bdHistorial;
+        private System.Windows.Forms.Button bdTop1;
+        private System.Windows.Forms.Button bdtop2;
     }
 }

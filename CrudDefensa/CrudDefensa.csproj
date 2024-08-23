@@ -187,6 +187,30 @@
     <Compile Include="Clases\clientes.Designer.cs">
       <DependentUpon>clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\v4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\v4.Designer.cs">
+      <DependentUpon>v4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\v5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\v5.Designer.cs">
+      <DependentUpon>v5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Vista2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Vista2.Designer.cs">
+      <DependentUpon>Vista2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Vista3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Vista3.Designer.cs">
+      <DependentUpon>Vista3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\VistaInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +260,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clases\clientes.resx">
       <DependentUpon>clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clases\v4.resx">
+      <DependentUpon>v4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clases\v5.resx">
+      <DependentUpon>v5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clases\Vista2.resx">
+      <DependentUpon>Vista2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clases\Vista3.resx">
+      <DependentUpon>Vista3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clases\VistaInventario.resx">
       <DependentUpon>VistaInventario.cs</DependentUpon>
